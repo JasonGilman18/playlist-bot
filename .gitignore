@@ -26,5 +26,7 @@ yarn-error.log*
 /rasa/env
 /backend/.vscode
 /backend/env
+/backend/config.py
 
 .vscode
+.env

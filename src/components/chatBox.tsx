@@ -90,7 +90,7 @@ class ChatBox extends React.Component<ChatBoxProps, ChatBoxStates>
 
                         if(tag == "-a")
                         {
-                            actualMessage += "?client_id=0295cfddf03a487d9f612990d0dfd322&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F&scope=user-top-read";
+                            actualMessage += "?client_id="+process.env.REACT_APP_SPOTIFY_CLIENT_ID+"&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F&scope=user-top-read";
                             return <ChatMessage msgType="bot"><a href={actualMessage} onClick={(e) => this.captureToken}>log in</a></ChatMessage>
                         }
                         else
