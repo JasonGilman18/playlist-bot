@@ -8,7 +8,7 @@ A problem music listeners often face is branching out to find new music. By comb
 
 ## Tech-Stack
 
-- Frontend: <a href="https://reactjs.org/">ReactJS</a>
+- Frontend: <a href="https://reactjs.org/">ReactJS</a> + <a href="https://www.typescriptlang.org/">Typescript</a>
 - Backend: <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a>
 - NLU: <a href="https://rasa.com/">Rasa</a>
 - Services: <a href="https://developer.spotify.com/documentation/web-api/">Spotify Web API</a>
