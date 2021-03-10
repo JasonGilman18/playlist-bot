@@ -1,10 +1,12 @@
-# playlist bot
+# Playlist Bot
 
 This project was created during TAMUmake 2021
 
 ## Description
 
 A problem music listeners often face is branching out to find new music. By combining an easy to use platform and recommendation algorithms, the playlist bot brings a solution to this problem. By answering various questions, the application learns about the user's music needs and taste, and ultimately builds a Spotify playlist for them.
+
+<img src='./readmeImg.png'/>
 
 ## Tech-Stack
 
