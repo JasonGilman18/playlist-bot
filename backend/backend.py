@@ -1,3 +1,4 @@
+from . import config
 from flask import Flask, json, request, jsonify
 from flask_restful import Resource, Api
 from flask_cors import CORS
@@ -5,8 +6,7 @@ import dill
 import requests
 import os
 import math
-import time
-import config
+
 
 app = Flask(__name__)
 CORS(app)
@@ -374,7 +374,7 @@ def getArtistsFromProfile(genres, limit, access_token):
 
 def getAccessToken(authorization_code):
     client_id = config.spotify_client_id
-    client_secret = config.client_secret
+    client_secret = config.spotify_client_secret
     
     response = requests.post('https://accounts.spotify.com/api/token', 
                                 data={'grant_type': "authorization_code", 
