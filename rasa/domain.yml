@@ -1,0 +1,23 @@
+version: "2.0"
+
+intents:
+  - affirm
+  - deny
+  - reporting_genres
+
+responses:
+  utter_affirm_start:
+  - text: "Okay, cool. Let's get started."
+  - text: "Awesome. Let's start."
+
+  utter_deny_start:
+  - text: "Okay, no problem."
+  - text: "No problem."
+  - text: "No worries."
+
+  utter_prompt_genres:
+  - text: "What music genres do you like?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

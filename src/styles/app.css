@@ -1,0 +1,160 @@
+:root
+{
+    --dark-background: #373B58;
+    --light-background: #F4F4F4;
+    --dark-accent: #437C90;
+    --light-accent: #FFCF00;
+    --light-accent-alt: #CDC7E5;
+    --dark-text: #14151F;
+    --light-text: #F4F4F4;
+    --dark-hover: #3c3e5d;
+    --light-hover: #fff;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Dosis', sans-serif;
+}
+
+.mainGridContainer
+{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.leftContainer
+{
+    z-index: 2;
+    flex-basis: auto;
+    flex-shrink: 0;
+    height: 100%;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background-color: var(--dark-background);
+}
+
+.rightContainer
+{
+    flex-basis: auto;
+    height: 100%;
+    width: 70%;
+
+    padding: 0% 17% 0% 5%;
+
+    background-color: var(--light-background);
+}
+
+.firstStage
+{
+    z-index: 2;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.genreStage
+{
+    z-index: 2;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContainer
+{
+    flex: 0 0 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.spotifyObjectContainer
+{
+    flex: 1 0 70%;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.spotifySongObjectContainer
+{
+    flex: 1 0 70%;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    margin-bottom: 50px;
+}
+
+canvas
+{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden
+{
+    display: none;
+}
+
+
+
+.spotifySongObjectContainer:hover::-webkit-scrollbar-thumb
+{
+    background: #396879;
+}
+
+.spotifySongObjectContainer::-webkit-scrollbar
+{
+    width: 8px;
+}
+
+.spotifySongObjectContainer::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.spotifySongObjectContainer::-webkit-scrollbar-thumb
+{
+    background: #315968;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+}
+
+.spotifySongObjectContainer::-webkit-scrollbar-thumb:hover
+{
+    background: #41778b;
+}
+
+.spotifySongObjectContainer::-webkit-scrollbar-thumb:active
+{
+    background: #437c90;
+}

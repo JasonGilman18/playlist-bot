@@ -1,0 +1,82 @@
+.biggerMessageContainerSub
+{
+    width: 50%;
+    max-width: 350px;
+    height: 20%;
+
+    align-self: flex-end;
+
+    background-color: var(--light-accent);
+}
+
+.biggerMessageContainerSub.mid
+{
+    align-self: center;
+
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+
+.biggerMessageContainerSub.header
+{
+    margin-top: 25px;
+
+    height: 75%;
+
+    align-self: none;
+}
+
+.biggerMessageContainer
+{
+    width: 50%;
+    max-width: 350px;
+    height: 20%;
+
+    align-self: flex-start;
+
+    background-color: var(--dark-accent);
+}
+
+.smallerMessageContainerSub
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    left: 15px;
+    top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-accent);
+    color: var(--light-text);
+}
+
+.smallerMessageContainerSub h2
+{
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+.smallerMessageContainer
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    right: 15px;
+    bottom: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--light-accent);
+    color: var(--dark-text);
+    font-weight: 700;
+    font-size: x-large;
+}

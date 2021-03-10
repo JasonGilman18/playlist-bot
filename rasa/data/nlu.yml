@@ -1,0 +1,281 @@
+version: "2.0"
+
+nlu:
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - yes please
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: confused
+  examples: |
+    - what is that
+    - im confused
+    - i'm confused
+    - idk
+    - i don't know
+    - i do not know
+    - not sure
+
+- intent: reporting_occasion
+  examples: |
+    - [partying](occasion_party)
+    - [study](occasion_study)
+    - [chilling](occasion_chill)
+    - [workout](occasion_workout)
+    - i will use it for [partys](occasion_party)
+    - it's for my [birthday](occasion_party)
+    - it is for my [birthday party](occasion_party)
+    - i will mostly listen while i [focus](occasion_study)
+    - its for when i am [studying](occasion_study)
+    - when i do [homework](occasion_study)
+    - i want it for when i [relax](occasion_chill)
+    - when my friends and i [hang out](occasion_chill)
+    - when im [chilling](occasion_chill)
+    - when i'm [hanging](occasion_chill)
+    - when i [workout](occasion_workout)
+    - while i [work out](occasion_workout)
+    - i am going to listen when i [run](occasion_workout)
+    - [running](occasion_workout)
+    - mostly for [working out](occasion_workout)
+
+- lookup: occasion_party
+  examples: |
+    - birthday party
+    - birth day party
+    - party
+    - birthday
+    - new years
+    - new years party
+    - partying
+    - partys
+    - birthdays
+
+- lookup: occasion_study
+  examples: |
+    - study
+    - focus
+    - concentrate
+    - studying
+    - homework
+    - working
+    - focusing
+    - concentrating
+
+- lookup: occasion_chill
+  examples: |
+    - chill
+    - chilling
+    - relax
+    - relaxing
+    - hanging out
+    - hang out
+    - hanging
+    - calm
+    - calming
+    - yoga
+
+- lookup: occasion_workout
+  examples: |
+    - workout
+    - work out
+    - working out
+    - fitness
+    - gym
+    - lifting
+    - lifting weights
+    - running
+    - cardio
+    - run
+    - running
+
+- intent: reporting_genres
+  examples: |
+    - i like [rock](genre_rock), [rap music](genre_hip-hop), and [pop](genre_pop)
+    - [rock n roll](genre_rock) [alt](genre_indie_alternative) [classic rock](genre_rock)
+    - [hip hop](genre_hip-hop), [pop music](genre_pop)
+    - [alternative](genre_alternative) and [pop music](genre_pop)
+    - i love [hard rock](genre_rock)
+    - my favorite is [guitar](genre_indie_alternative) music
+    - my favorites are [dubstep](genre_dance_electronic), [blues](genre_soul_funk), and [k pop](genre_k-pop_j-pop)
+    - [funk](genre_soul_funk)
+    - i really like [latin](genre_latin) music
+    - [classical](genre_classical) is my favorite
+    - [rnb](genre_r-n-b) is the best sounding to me
+    - ive always liked [country](genre_country_folk) music
+    - i've always liked [afrobeat](genre_dance_electronic)
+    - [emo](genre_heavy-metal) really resonates with me
+
+- lookup: genre_rock
+  examples: |
+    - rock
+    - rocknroll
+    - rock n' roll
+    - rock n roll
+    - classic rock
+    - rock music
+    - guitar
+    - guitar music
+    - hard-rock
+    - hard rock 
+    - psych-rock
+    - psych rock
+    - punk
+    - punk-rock
+    - punk rock
+    - work-out
+    - work out
+    - rock and roll
+
+- lookup: genre_hip-hop
+  examples: |
+    - hiphop
+    - hip-hop
+    - rap
+    - hip hop
+    - rap music
+    - work-out
+
+- lookup: genre_pop
+  examples: |
+    - pop
+    - popular
+    - radio
+    - on the radio
+    - radio music
+    - pop music
+    - popular music
+    - indie-pop
+    - party
+    - work-out
+    
+
+- lookup: genre_indie_alternative
+  examples: |
+    - alternative
+    - alt
+    - alt-rock
+    - alt rock
+    - alternative music
+    - grunge
+    - emo
+    - groove
+    - guitar
+    - indie
+    - indie-pop
+    - minimal-techno
+    - psych-rock
+    - punk
+    - punk-rock
+
+- lookup: genre_heavy-metal
+  examples: |
+    - black-metal
+    - black metal
+    - metal
+    - heavy metal
+    - heavy-metal
+    - death-metal
+    - goth
+    - emo
+    - grindcore
+    - grunge
+    - guitar
+    - hardcore
+    - metal-misc
+    - metalcore
+    - work-out
+
+- lookup: genre_dance_electronic
+  examples: |
+   - afrobeat
+   - afro beat
+   - dance
+   - dancehall
+   - deep-house
+   - detroit-techno
+   - drum-and-bass
+   - dubstep
+   - edm
+   - electronic
+   - garage
+   - hardstyle
+   - house
+   - minimal-techno
+   - party
+   - progressive-house
+   - reggaeton
+   - synth-pop
+   - techno
+   - trance
+   - trip-hop
+   - work-out
+
+- lookup: genre_country_folk
+  examples: |
+    - bluegrass
+    - folk
+    - country
+    - guitar
+
+- lookup: genre_r-n-b
+  examples: |
+    - rnb
+    - r and b
+    - r&b
+    - r-n-b
+
+- lookup: genre_soul_funk
+  examples: |
+    - soul
+    - funk
+    - blues
+    - disco
+    - gospel
+    - groove
+    - jazz
+    - reggae
+    - ska
+
+- lookup: genre_classical
+  examples: |
+    - classical
+    - piano
+    - jazz
+    - opera
+    - show-tunes
+    - study
+
+- lookup: genre_k-pop_j-pop
+  examples: |
+    - j-dance
+    - j-idol
+    - j-pop
+    - j-rock
+    - k-pop
+    - k pop
+
+- lookup: genre_latin
+  examples: |
+    - latin
+    - latino
+    - reggaeton
+    - spanish
+    - afrobeat
+    - afro beat
+    - dancehall

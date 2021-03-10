@@ -1,0 +1,44 @@
+.chatMessageContainer
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+
+    display: flex;
+}
+
+.chatMessageBox
+{
+    min-height: 30px;
+    height: auto;
+    max-width: 40%;
+
+    padding: 15px;
+
+    color: var(--dark-text);
+    font-size: x-large;
+    font-weight: 500;
+    border-radius: 12px;
+}
+
+.chatMessageContainer.bot
+{
+    justify-content: flex-start;
+}
+
+.chatMessageContainer.user
+{
+    justify-content: flex-end;
+}
+
+.chatMessageBox.bot
+{
+    margin-left: 35px;
+    background-color: var(--dark-accent);
+}
+
+.chatMessageBox.user
+{
+    margin-right: 35px;
+    background-color: var(--light-accent-alt);
+}

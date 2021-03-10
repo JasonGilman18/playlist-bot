@@ -1,0 +1,53 @@
+.progressBarContainer
+{
+    flex-basis: auto;
+    height: 30%;
+    width: 100%;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressBarOutlineContainer
+{
+    position: relative;
+    left: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.progressBarBubbleOutline
+{
+    position: relative;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--light-background);
+
+    transition: box-shadow ease-in 2s;
+}
+
+.progressBarConnectorOutline
+{
+    position: relative;
+    height: 20px;
+    width: 50px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--light-background);
+
+    transition: box-shadow ease-out 2s 1.82s;
+}

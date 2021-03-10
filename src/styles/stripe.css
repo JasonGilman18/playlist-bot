@@ -1,0 +1,35 @@
+.stripe1
+{
+    position: absolute;
+    right: 11%;
+
+    height: 100%;
+    width: 1.5%;
+    max-width: 15px;
+
+    background-color: var(--light-accent-alt);
+}
+
+.stripe2
+{
+    position: absolute;
+    right: 7%;
+
+    height: 100%;
+    width: 1.5%;
+    max-width: 15px;
+
+    background-color: var(--light-accent);
+}
+
+.stripe3
+{
+    position: absolute;
+    right: 3%;
+    
+    height: 100%;
+    width: 1.5%;
+    max-width: 15px;
+
+    background-color: var(--dark-accent);
+}

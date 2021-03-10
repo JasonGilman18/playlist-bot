@@ -1,0 +1,21 @@
+version: "2.0"
+
+stories:
+
+- story: collect info
+  steps:
+  - intent: affirm
+  - action: utter_affirm_start
+  - action: utter_prompt_genres
+  - intent: reporting_genres
+
+- story: dont collect info
+  steps:
+  - intent: deny
+  - action: utter_deny_start
+#  - checkpoint: check_start_ranking
+
+#- story: ranking
+#  steps:
+#  - checkpoint: check_start_ranking
+#  - action: utter_
